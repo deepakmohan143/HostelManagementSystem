@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>HOSTEL DETAILS</title>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>  
+  
+  
+</head>  
+<body>  
+<div class="container">  
+  
+
+  <form  action="trash.jsp">  
+      
+    
+      
+    <div class="form-group">  
+      <label for="HOSTEL">HOSTEL:</label>  
+      <select class="form-control" name="Hostel">  
+          <option value="1">EMERALD</option>  
+        <option value="2">SAPHIRE</option>  
+        <option value="3">DIAMOND</option>  
+        <option value="4">RUBY</option>  
+      </select>  
+      <br>  
+      <label for="floor">FLOOR:</label>  
+      <select class="form-control" name="Floor">  
+          <option value="0">GROUND</option>  
+        <option value="1">FIRST</option>  
+        <option value="2">SECOND</option>  
+        <option value="3">THIRD</option>  
+       
+      </select>  
+    </div> 
+        <div class="form-group">  
+      <label for="ROW">ROW:</label>  
+      <input type="number" class="form-control" name="Row" min="1" max="13" >
+      
+    </div>  
+      
+       <div class="form-group">  
+      <label for="COLUMN">COLUMN:</label>  
+      <input type="number" class="form-control" name="Column" min="1" max="27">  
+         
+       </div> 
+      
+      <div class="form-group">  
+      <label for="HOSTEL">TYPE:</label>  
+      <select class="form-control" id="Room" name="Room" onchange="showFunction()" >  
+          <option value="0" >NULL</option>  
+        <option value="-1">PATH</option>  
+        <option value="-2">WALL</option>  
+        <option value="-3">RESTROOM</option>  
+        <option value="-4" >SETTLE COURT</option>
+        <option value="-5">CARROM</option>
+        <option value="-6">DOCTOR</option>
+        <option value="-7">STEPS</option>
+        <option value="1">ROOM</option>
+       
+      </select>  
+      
+       <div class="form-group" style="visibility: hidden;"
+ id="visible1">  
+      <label for="Room">ROOM NO:</label>  
+      <input type="number" class="form-control" name="rno" min="100" max="500">  
+         
+       </div> 
+     <div class="form-group" style="visibility: hidden;"
+ id="visible2">  
+         <label for="cots">COTS FACILITY:</label> <br>
+ 
+    
+      <input type="radio" name="cot" value="4" checked>4 COTS
+    <br>
+   
+      <input type="radio" name="cot" value="2">2 COTS
+   <br>
+   
+      <input type="radio" name="cot" value="1">1 COT
+    <br>
+  
+</div>
+      
+      
+      </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+       
+       
+       
+  </form>  
+</div> 
+    <script type="text/javascript"> 
+        function showFunction() { 
+            var room = document.getElementById("Room").value;
+            if(room==='1')
+            {
+            document.getElementById("visible1").style.visibility = "visible";
+            document.getElementById("visible2").style.visibility = "visible";
+        }else{
+         document.getElementById("visible1").style.visibility = "hidden";
+            document.getElementById("visible2").style.visibility = "hidden";   
+        }
+        } 
+  
+        
+    </script>
+</body>  
+</html>  

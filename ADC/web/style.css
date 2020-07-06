@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2019, 12:08:17 PM
+    Author     : Deepak
+*/
+
+ body { background: black !important; } 
+ .topnav {
+  overflow: hidden;
+  background-color: #654321;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-left {
+    float:left;
+}
+.fir {
+    float: contour;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.room
+{
+    background-color:green; 
+    text-align: center;
+    color: white;
+    
+
+}.roomfull
+{
+    background-color:red; 
+    text-align: center;
+    color: white;
+    
+
+}
+.null
+{
+    background-color: #09FBD300;
+    text-align: center;
+}
+.path
+{
+    background-color:skyblue;
+    text-align: center;
+}
+.wall{
+    background-color:yellow;
+    color: black;
+    text-align: center;
+}
+.res{
+    background-color:blue;
+    color: white;
+    text-align: center;
+}
+.settle{
+    background-color: #09FBD300;
+     color: white;
+}
+.carrom{
+    background-color: orange;
+    color: black;
+    text-align: center;
+}
+.doctor{
+    background-color:pink;
+    color: black;
+    text-align: center;
+}
+.step{
+    background-color: indigo;
+     color: white;
+     text-align: center;
+}
+/*table {
+  border-collapse: collapse;
+}*/
+
+table, th, td {
+  border: 1px solid black;
+}
+td{
+    cursor: pointer;
+}
+.tooltipq {
+  position: relative;
+  /*display: inline-block;*/
+  
+}
+
+.tooltipq .tooltiptextq {
+  visibility: hidden;
+ 
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 10%;
+}
+
+.tooltipq:hover .tooltiptextq {
+  visibility: visible;
+}
+.modal-header{
+    background-color: black;
+    color: red;
+}
+.modal-footer
+{
+    background-color: black;
+}
+.modal-body
+{
+    background-color:black; 
+ 
+    
+    
+}
+ul{
+    list-style: none;
+}
